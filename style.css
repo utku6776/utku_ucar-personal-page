@@ -50,6 +50,11 @@ header nav h1{
 }
 
 
+header p {
+    opacity: 0;
+}
+
+
 header nav h1 a{
     color: white;
     text-decoration: none;
@@ -343,3 +348,177 @@ header nav h1 a{
     font-size: 90px;
 }
 
+@media (max-width: 767px){
+    body{
+        width: 768px;
+    }
+    
+   header{
+    height: 50px;
+    width: 0px;
+    border: none;
+    position: relative;
+    transition: 1s ease ;
+    
+   }
+
+   header h1{
+    opacity: 0;
+    
+   }
+
+   header p{
+    opacity: 100;
+    font-size: 50px;
+    position:absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+   }
+
+   header nav{
+    background-color: black;
+   }
+
+
+   header p:active{
+    width: 100px;
+   }
+   
+
+   .nav-back{
+    margin-top: -10px;
+    
+   }
+
+   .blur-phone{
+    opacity: 0;
+   }
+
+
+   header nav ul{
+    display: grid;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+    background-color:black;
+    border: 2px solid white;
+    z-index: 200;
+   }
+
+   .content h1{
+    font-size: 20px;
+   }
+   .content h2{
+    font-size: 20px;
+   }
+
+   .content div{
+    box-shadow: 0 0 1000px 80px #1d4ed8;
+   }
+
+   .Home{
+    position: relative;
+   }
+
+   .blur-black{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: -100px;
+   }
+
+
+   .blur-phone{
+    position: absolute;
+    opacity: 100;
+    top: 0;
+    right: 0;
+    margin-top: -300px;
+   }
+
+   .contentme{
+    padding: 0px;
+    width:340px;
+    overflow: scroll;
+   }
+   
+
+   .Features{
+    display: flex;
+    justify-content: start;
+    margin-left: 34px;
+   }
+
+   .content-feature{
+    padding: 0px;
+    width: 340px;
+    
+   }
+   
+   .container-pricing{
+    display: grid;
+    gap: 30px;
+    justify-content: start;
+    
+   }
+
+
+   
+
+   .plan{
+    padding: 10px;
+    width: 340px;
+    margin-left: 34px;
+   }
+  
+   .Commun{
+    margin-top: 1000px;
+   }
+
+   .up{
+    position:fixed;
+    left: 0;
+   }
+
+   .About{
+    display: flex;
+    justify-content: start;
+    margin-left: 34px;
+   }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+    header  h1{
+        opacity: 0;
+    }
+
+    header{
+        display: flex;
+        justify-content:end;
+    }
+
+    .Home h1{
+        font-size: 40px;
+    }
+
+
+   .container-pricing{
+    display: grid;
+   }
+
+   .Commun{
+    margin-top: 900px;
+   }
+}
+
+
+
+
+@media (width: 1024px){
+    .about{
+        font-size: 20px;
+    }
+}

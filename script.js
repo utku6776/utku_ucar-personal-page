@@ -29,5 +29,27 @@ link4.addEventListener('click',() =>{
 })
 
 up.addEventListener('click',() =>{
-    scrollToElement(".home")
+    scrollToElement(".home");
+})
+
+
+const nav_but = document.getElementById("nav-but")
+const nav_back = document.getElementById("nav-back")
+const nav = document.getElementById("navbar");
+
+nav_back.style.display = "none"
+
+
+nav_but.addEventListener('click',function(){
+    
+    nav.style.width = "170px";
+    nav_but.style.display = "none"
+    nav_back.style.display = "block"
+})
+
+
+nav_back.addEventListener("click",function(){
+    nav.style.width = "0px"
+    nav_but.style.display = "block"
+    nav_back.style.display = "none"
 })
