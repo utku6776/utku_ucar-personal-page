@@ -447,7 +447,7 @@ header nav h1 a{
    .Features{
     display: flex;
     justify-content: start;
-    margin-left: 34px;
+    margin-left: 15px;
    }
 
    .content-feature{
@@ -469,7 +469,7 @@ header nav h1 a{
    .plan{
     padding: 10px;
     width: 340px;
-    margin-left: 34px;
+    margin-left: 15px;
    }
   
    .Commun{
@@ -484,7 +484,7 @@ header nav h1 a{
    .About{
     display: flex;
     justify-content: start;
-    margin-left: 34px;
+    margin-left: 15px;
    }
 
 }
