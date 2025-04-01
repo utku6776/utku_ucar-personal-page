@@ -448,12 +448,13 @@ header nav h1 a{
     display: flex;
     justify-content: start;
     margin-left: 15px;
+    overflow:scroll;
    }
 
    .content-feature{
     padding: 0px;
     width: 340px;
-    
+    height:600px;
    }
    
    .container-pricing{
