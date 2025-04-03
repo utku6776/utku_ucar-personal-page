@@ -1,120 +1,128 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Personal Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Personal Page</title>
 </head>
-<body>
-    <header id="navbar" class="home" style="height: 100px;">
-        <p class="nav-but" id="nav-but"><i class="ri-menu-line" style="color: white;"></i></p>
-        <p  style="color: white;"  class="nav-back" id="nav-back"><i class="ri-arrow-left-long-line"></i></p>
-        <nav>
-            <h1 id="link5"><a href="#">UTKU UCAR</a></h1>
-            <ul>
-                <li id="link1"><a href="#">ABOUT</a></li>
-                <li id="link2"><a href="#">FEATURES</a></li>
-                <li id="link3"><a href="#">PRICING</a></li>
-                <li id="link4"><a href="#">COMMUNICATION</a></li>
-            </ul>
+<body class="h-full bg-black w-full">
+    <!--navbar-->
+   <header class=" py-12 font-mono   text-amber-50 uppercase border-b border-amber-50">
+    <div class="container mx-auto flex items-center justify-between">
+        <p class="text-2xl sm:text-4xl lg:text-6xl text-nowrap   font-bold uppercase ">utku uÇar</p>
+        <nav class=" hidden  sm:flex  flex-1   justify-end mr-16">
+            <div class="flex items-center text-lg space-x-8 ml-[100px]">
+                <a href="#" id="link1" class="hover:text-gray-500">about</a>
+                <a href="#" id="link2"  class="hover:text-gray-500">features</a>
+                <a href="#" id="link3"  class="hover:text-gray-500">communication</a>
+            </div>
         </nav>
-    </header>
 
-    <div  id="up"  class="up">
-        <p><i class="ri-arrow-up-line"></i></p>
-    </div>
-
-    <section class="Home">
-        <div class="container">
-            <div class="content">
-                <div class="blur-phone"></div>
-                <div class="blur-black"></div>
-                <div class="blur-blue"></div>
-                <h1>CREATE YOUR WEBSITE LIKE A PRO</h1>
-                <h2>WEB DEVELOPER &nbsp<span> UTKU UCAR</span></h2>
-            </div>
-        </div>
-    </section>
-   
-    <section class="About" style="height: 500px;">
-        <div class="about">
-            <div class="blur-about"></div>
-            <div class="aboutme">
-                <div class="contentme">
-                    <h1>ABOUT ME</h1>
-                    <p>Hi! I'm Utku, a tech enthusiast passionate about web development and Python. I see coding not just as a job but as a creative process. Exploring new things in the web world and building projects is both a passion and an ever-evolving adventure for me.
-
-                        My interest in technology isn’t limited to coding—I love keeping up with new devices, software, and innovations. Besides that, sports are also an essential part of my life. I enjoy staying active both physically and mentally.
-                        
-                        I'm always open to learning and developing new projects! If we share common interests or just want to chat, feel free to reach out.</p>
-                </div>    
-            </div>
-
-
-           <!-- <div class="aboutjob">-->
-              <!--  <div class="contentjob">-->
-                  <!--  <h1>ABOUT MY JOB</h1>-->
-                  <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga consectetur cupiditate adipisci, dolorem assumenda consequuntur architecto est! Provident modi voluptates eos debitis obcaecati nam, voluptate, alias exercitationem porro quos Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sunt suscipit minima, reiciendis, quis fugit provident ut voluptate, dignissimos dolor quisquam amet ipsa ad temporibus possimus error molestiae voluptas aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere molestiae, beatae illo numquam, adipisci hic illum doloremque dolorem assumenda distinctio dolorum accusantium quos. Quasi, suscipit. Aliquam ipsum vero pariatur temporibus?</p> -->
+        <div class=" relative flex sm:hidden">
+            <div class="block sm:hidden">
+                <div  id="mob-btn" class=" absolute flex flex-col items-center right-0 space-y-1 cursor-pointer">
+                    <div class="bg-amber-50 w-8 h-1 rounded-full"></div>
+                    <div class="bg-amber-50 w-8 h-1 rounded-full"></div>
+                    <div class="bg-amber-50 w-8 h-1 rounded-full"></div>
                 </div>
             </div>
+
+            <div  id="nav-mob" class="hidden text-1xl text-lg text-amber-50 list-none transition duration-500">
+                <ul>
+                    <li id="link4" class="text-center"><a href="#">about</a></li>
+                    <li id="link5"  class="text-center"><a href="#">features</a></li>
+                    <li id="link6"  class="text-center"><a href="#">communication</a></li>
+                </ul>
+            </div>
+            
+            
+        </div>   
+    </div>
+   </header>
+   <!--home section-->
+   <section class="h-[600px] relative    w-full flex">
+        <div class=" absolute top-0 left-0 shadow-[0_0_1000px_100px_#1d4ed8] z-[-101] "></div>
+        <div class="flex flex-col  text-amber-50 justify-center items-center w-full ">
+            <h1 class="text-1xl  sm:text-3xl  lg:text-6xl   font-[poppins]  text-nowrap italic  my-[50px] ">CREATE YOUR WEBSITE LIKE A PRO </h1>
+            <h2 class="uppercase  text-nowrap text-1xl lg:text-3xl  my-[-50px]">web developer utku uÇar</h2>
+        </div>
+        <div class=" absolute bottom-0 right-0 shadow-[0_0_1000px_100px_#1d4ed8] z-[-101]"></div>
+   </section>
+   <!--about section-->
+   <section id="about" class=" about  h-[600px] w-full flex bg-[#1e272e] justify-center  relative items-center my-[400px]">
+        <div class="absolute top-0 w-full shadow-[10px_10px_200px_50px_black]"></div>
+        <div class="flex justify-center  text-black">
+            <h1 class="uppercase text-2xl  sm:text-3xl lg:text-4xl  font-[poppins] text-amber-50  absolute top-1 py-12 tracking-[10px] ">about</h1>
+            <p class="text-[13px] sm:text-[20px]   md:text-2xl lg:p-60 text-amber-50 flex px-16 ">Hi! I'm Utku, a tech enthusiast passionate about web development and Python. I see coding not just as a job but as a creative process. Exploring new things in the web world and building projects is both a passion and an ever-evolving adventure for me. My interest in technology isn’t limited to coding—I love keeping up with new devices, software, and innovations. Besides that, sports are also an essential part of my life. I enjoy staying active both physically and mentally. I'm always open to learning and developing new projects! If we share common interests or just want to chat, feel free to reach out.</p>
+        </div>
+        <div class="absolute bottom-0 w-full shadow-[10px_10px_200px_50px_black]"></div>
+   </section>
+
+   <!--features section-->
+   <section id="features" class="h-[700px]  w-full p-10 text-amber-50 relative">
+        <div class="flex justify-center">
+            <h1 class="text-3xl md:text-6xl uppercase tracking-[5px] md:tracking-[10px] absolute top-0">features</h1>
+        </div>
+
+        
+        <div class="grid lg:flex justify-center items-center gap-100 mt-60"> <!--flex justify-center items-center gap-100 mt-60-->
+            
+            
+            <div class="bg-[#1e272e] h-[550px] w-full   lg:w-1/3  text-2xl rounded-[1rem] p-[30px] hover:border border-amber-50 relative">
+                <div class="absolute left-0 h-full shadow-[10px_10px_200px_50px_black]"></div>
+                <h1 class="text-2xl  lg:text-2xl uppercase flex justify-center text-nowrap">web testing automation</h1>
+                <p class="my-10 uppercase "><i class="ri-checkbox-circle-line">&nbsp;&nbsp;&nbsp;Python</i></p>
+                <p class="ri-arrow-right-s-line  py-4">Data scraping from websites</p>
+                <p class="ri-arrow-right-s-line py-4">Filling out forms and creating accounts</p>
+                <p class="ri-arrow-right-s-line py-4">Bots and scripts that can perform automatic<br> transactions</p>
+                
+            </div>
+
+            
+            <div class="bg-[#1e272e] h-[550px] w-full lg:w-1/3 text-2xl rounded-[1rem] p-[30px] hover:border border-amber-50 relative">
+                <div class="absolute left-0 h-full shadow-[10px_10px_200px_50px_black]"></div>
+                <h1 class="text-3xl uppercase flex justify-center">web design</h1>
+                <p class="my-10 uppercase lg:text"><i class="ri-checkbox-circle-line">&nbsp;&nbsp;&nbsp;html&css</i></p>
+                <p class="ri-arrow-right-s-line  py-4">Website design with figma</p>
+                <p class="ri-arrow-right-s-line py-4">Interactive Web Pages with JavaScript</p>
+                <p class="ri-arrow-right-s-line py-4">Modern, Stylish and Responsive Web Design with CSS</p>
+                
+            </div>
         </div>
     </section>
 
-    <section class="Features" style="height: 400px;">
-        <div class="content-feature">
-            <div class="blur-feat"></div>
-            <h1>FEATURES</h1>
-            <div class="content-feature-list">
-                <p><i class="ri-checkbox-circle-line"></i>PYTHON</p>
-                <p>&nbsp&nbsp&nbsp&nbsp<i class="ri-arrow-right-s-line">Data scraping from websites</i></p>
-                <p>&nbsp&nbsp&nbsp&nbsp<i class="ri-arrow-right-s-line">Filling out forms and creating accounts</i></p>
-                <p>&nbsp&nbsp&nbsp&nbsp<i class="ri-arrow-right-s-line">Bots and scripts that can perform automatic transactions</i></p>
-                <p><i class="ri-checkbox-circle-line"></i>HTML&CSS</p>
-                <p>&nbsp&nbsp&nbsp&nbsp<i class="ri-arrow-right-s-line">semi-professional website design</i></p>
-            </div>
+    <!--communication section-->
+    <section id="communication" class="h-[400px] w-full flex bg-[#1e272e] justify-center  relative items-center mt-[1600px] lg:mt-[600px]  my-[100px]">
+        <div class="absolute top-0 w-full shadow-[10px_10px_200px_50px_black]"></div>
+        <div class="flex  justify-center text-black  ">
+            <h1 class="uppercase text-2xl md:text-4xl font-[poppins] text-amber-50  absolute top-1 py-12 tracking-[5px] md:tracking-[10px] ">communication</h1>
+            
+            <div class="grid">
+                <div class="my-10">
+                    <p class="text-1xl sm:text-2xl text-amber-50 flex px-16  ">You can use the links above to contact me.</p>
+                </div>
+
+
+                <p class="text-1xl sm:text-2xl text-amber-50 flex px-16 "><a href="#"><i class="ri-mail-line"></i>&nbsp;Mail&nbsp;:&nbsp;&nbsp;&nbsp;utkuucar346767@gmail.com</a></p>
+                <p class="text-1xl sm:text-2xl text-amber-50 flex px-16 "><a href="#"><i class="ri-instagram-line"></i>&nbsp;Instagram&nbsp;:&nbsp;&nbsp;uutku.ucar_</a></p>
                
-    </section>
-
-    <section class="PRICING" style="height: 600px;">
-        <div class="container-pricing">
-            <div class="blur-price"></div>
-            <div class="plan">
-                <h1>BASIC PLAN(SOON)</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto vitae aspernatur consectetur quo</p>
-                <p><i class="ri-checkbox-circle-line"></i>50$</p>
-                <p><i class="ri-checkbox-circle-line"></i>7-14 days</p>
-                <p><i class="ri-checkbox-circle-line"></i>semi professional</p>
-                <button>BUY NOW</button>
-            </div>
-            <div class="plan">
-                <h1>GOLD PLAN(SOON)</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto vitae aspernatur consectetur quo</p>
-                <p><i class="ri-checkbox-circle-line"></i>250$</p>
-                <p><i class="ri-checkbox-circle-line"></i>4-5 days</p>
-                <p><i class="ri-checkbox-circle-line"></i> professional</p>
-                <button>BUY NOW</button>
-            </div>
-            <div class="plan">
-                <h1>DIAMOND PLAN(SOON)</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto vitae aspernatur consectetur quo</p>
-                <p><i class="ri-checkbox-circle-line"></i>500$</p>
-                <p><i class="ri-checkbox-circle-line"></i>2-3 days</p>
-                <p><i class="ri-checkbox-circle-line"></i>professional</p>
-                <button>BUY NOW</button>
             </div>
         </div>
-    </section>
+        <div class="absolute bottom-0 w-full shadow-[10px_10px_200px_50px_black]"></div>
+   </section>
 
-    <section class="Commun">
-        <div class="container-comm">
-            <h1 id="contact">CONTACT</h1>
-            <p><a href="#"><i class="ri-mail-line"></i>  Email   :  utkuucar346767@gmail.com</a></p>
-            <p id="insta"><a href="#"><i class="ri-instagram-line"></i>   Instagram  :  uutku.ucar_</a></p>
-        </div>
-    </section>
-    
-    <script src="script.js"></script>
+   <!--footer-->
+   <footer class="h-[50px] w-full bg-[#1e272e] flex items-center justify-center relative">
+    <div class="absolute top-0 w-full shadow-[10px_10px_500px_50px_black]"></div>
+        <p class="text-1xl sm:text-2xl text-amber-50">©2025 Tüm hakları saklıdır.</p>
+   </footer>
+
+   <script src="script.js"></script>
 </body>
 </html>
+
